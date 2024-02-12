@@ -1,0 +1,41 @@
+mixin players(modifier)
+  section.players&attributes(attributes)
+    .players__content 
+      h3.players__title Участники турнира
+      .players__navigation.swiper-nav
+        button(type="button").swiper-button-next-two
+        .players__pagination.swiper-pagination 
+        button(type="button").swiper-button-prev-two 
+      .players__slider.swiper-container
+        .players__items.swiper-wrapper
+          .players__item.swiper-slide
+            img(src="img/players.png" alt="Фото участника шахматного турнира").players__img
+            h4.players__name Хозе-Рауль Капабланка
+            p.players__skill Чемпион мира по шахматам
+            button(type="button").players__btn Подробнее
+          .players__item.swiper-slide
+            img(src="img/players.png" alt="Фото участника шахматного турнира").players__img
+            h4.players__name Эммануил Ласкер
+            p.players__skill Чемпион мира по шахматам
+            button(type="button").players__btn Подробнее
+          .players__item.swiper-slide
+            img(src="img/players.png" alt="Фото участника шахматного турнира").players__img
+            h4.players__name Александр Алехин
+            p.players__skill Чемпион мира по шахматам
+            button(type="button").players__btn Подробнее
+          .players__item.swiper-slide
+            img(src="img/players.png" alt="Фото участника шахматного турнира").players__img
+            h4.players__name Арон Нимцович
+            p.players__skill Чемпион мира по шахматам
+            button(type="button").players__btn Подробнее
+          .players__item.swiper-slide
+            img(src="img/players.png" alt="Фото участника шахматного турнира").players__img
+            h4.players__name Рихард Рети
+            p.players__skill Чемпион мира по шахматам
+            button(type="button").players__btn Подробнее
+          .players__item.swiper-slide
+            img(src="img/players.png" alt="Фото участника шахматного турнира").players__img
+            h4.players__name Остап Бендер
+            p.players__skill Гроссмейстер
+            button(type="button").players__btn Подробнее
+  +line

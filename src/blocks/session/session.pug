@@ -1,0 +1,25 @@
+mixin session(modifier)
+  section.session&attributes(attributes)
+    .session__content(id="session")
+      .session__picture 
+        img(src="img/chessman.png" alt="Шахматист").session__img
+      .session__info 
+        h3.session__title и сеанс <span class="session__game">одновременной игры <br>в шахматы на 160 досках </span> гроссмейстера О.&nbsp;Бендера
+        .session__table
+          .session__lvl 
+            .session__line-first Место проведения: 
+            .session__line-second Клуб «Картонажник»
+          .session__lvl 
+            .session__line-first Дата и время мероприятия: 
+            .session__line-second 22 июня 1927 г. в 18:00
+          .session__lvl 
+            .session__line-first Стоимость входных билетов: 
+            .session__line-second 20 коп.
+          .session__lvl 
+            .session__line-first Плата за игру: 
+            .session__line-second 50 коп.
+          .session__lvl 
+            .session__line-first Взнос на телеграммы:
+            .session__line-second <del>100 руб.</del> 21 руб. 16 коп.
+        a(href="#!").session__link По всем вопросам обращаться в администрацию к К. Михельсону
+            

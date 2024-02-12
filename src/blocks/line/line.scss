@@ -1,0 +1,54 @@
+.line {
+    &__line {
+        overflow: hidden;
+        user-select: none;
+        background: rgb(245, 73, 50);
+        padding: 16px 0 18px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        width: max-content;
+        animation: marquee 20s linear infinite;
+    }
+
+    &__line-text {
+        max-width: 100%;
+        color: rgb(255, 255, 255);
+        font-family: Merriweather;
+        font-size: 21px;
+        line-height: 110%;
+        text-transform: uppercase;
+        margin: 0;
+        padding-left: 12px;
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
+    }
+
+    &__line-text::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        display: inline-block;
+    }
+
+    @keyframes marquee {
+        0%  { transform: translate(100vw, 0); }
+        100% { transform: translate(-100%, 0); }
+    }
+
+    @media screen and (max-width: 375px) {
+        &__line {
+            padding: 10px 0;
+        }
+
+        &__line-text {
+            font-size: 16px;
+        }
+    }
+  
+}

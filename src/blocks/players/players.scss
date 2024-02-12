@@ -1,0 +1,175 @@
+.players {
+    &__content {
+        max-width: 1242px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        position: relative;
+    }
+
+    &__title {
+        color: rgb(49, 49, 49);
+        font-family: Merriweather;
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 198px 0 60px;
+    }
+
+    &__slider {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 140px;
+    }
+
+    &__item {
+       text-align: center;
+    }
+
+    &__img {
+        margin-bottom: 25px;
+    }
+
+    &__name {
+        color: rgb(49, 49, 49);
+        font-family: Golos Text;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 6px;
+    }
+
+    &__skill {
+        color: rgb(49, 49, 49);
+        font-family: Golos Text;
+        font-size: 20px;
+        line-height: 120%;
+        margin-bottom: 18px;
+    }
+
+    &__btn {
+        padding: 8px 12px 8px 10px;
+        border: 1px solid rgb(48, 87, 162);
+        border-radius: 62px;
+        color: rgb(48, 87, 162);
+        font-family: Golos Text;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+    &__btn:hover {
+        color: rgb(255, 255, 255);
+        background: rgb(48, 87, 162);
+    }
+
+    &__navigation {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 0 14px;
+    }
+
+    .swiper-button-next-two::after,
+    .swiper-button-prev-two::after {
+        font-size: 0;
+    }
+
+    .swiper-button-next-two,
+    .swiper-button-prev-two {
+        content: '';
+        background-image: url(../img/button-left.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(49, 49, 49);
+        border-radius: 50px;
+        width: 44px;
+        height: 44px;
+        z-index: 99;
+    }
+
+    .swiper-button-prev-two {
+        transform: rotate(180deg);
+        margin-left: 41px;
+    }
+
+    .swiper-button-next-two:hover,
+    .swiper-button-prev-two:hover {
+        background-color: rgb(251, 206, 81);
+    }
+
+    .swiper-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 2px;
+        color: rgb(49, 49, 49);
+        font-family: Golos Text;
+        font-size: 16px;
+        line-height: 120%;
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+
+    .swiper-pagination-total {
+        opacity: 0.5;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__title {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__navigation {
+            top: 110%;
+            right: auto;
+            //left: 35%;
+            left: calc(50% - 70px);
+        }
+
+        &__img {
+            margin-bottom: 28px;
+        }
+
+        &__name {
+           min-height: 58px;
+        }
+
+        &__skill {
+            min-height: 48px;
+
+        }
+    }
+
+    
+
+    @media screen and (max-width: 560px) {
+        &__title {
+            font-size: 36px;
+            margin: 125px 0 40px;
+        }
+
+        &__slider {
+            margin-bottom: 176px;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        &__title {
+            text-align: left;
+        }
+    }
+
+   
+
+    
+}

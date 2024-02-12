@@ -1,0 +1,69 @@
+@import 'mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap');
+
+
+
+
+/* Plugins */
+
+
+
+/* Blocks */
+
+body, ul, ol {
+  margin: 0;
+  padding: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+@import './src/blocks/show/show';
+@import './src/blocks/tour/tour';
+@import './src/blocks/session/session';
+@import './src/blocks/stages/stages';
+@import './src/blocks/players/players';
+@import './src/blocks/line/line';
+@import './src/blocks/footer/footer';

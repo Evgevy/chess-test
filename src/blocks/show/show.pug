@@ -1,0 +1,18 @@
+mixin show(modifier)
+  section.show&attributes(attributes)
+    .show__content 
+      a(href="#!").show__logo
+        .show__figure 
+          include img/horse.svg
+          include img/horse.svg
+          include img/horse.svg
+          include img/horse.svg
+        p.show__logo-text Клуб<br>четырех коней
+      .show__info 
+        h1.show__title Превратите<br>уездный город
+        h2.show__text в столицу
+        h2.show__text.show__text--down земного шара
+        p.show__pay-text Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
+        a(href="#tour").show__link Поддержать шахматную мысль
+        a(href="#session").show__link-right Подробнее <br>о турнире
+  +line
